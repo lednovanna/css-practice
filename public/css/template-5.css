@@ -97,6 +97,12 @@
     display: flex;
     width: 100%;
     align-items: flex-start;
+<<<<<<< HEAD
+=======
+
+    align-items: flex-start;
+
+>>>>>>> 495b7afbe076f333bb6b70467efad3af8959c830
 
     gap: 40px;
   }
