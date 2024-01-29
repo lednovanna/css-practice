@@ -260,46 +260,50 @@
   }
 
   
-.expirience_header{
-   
 
-}
 
-.expirience_title{
-  font-weight: 600;
-   font-size: 24px;
-}
+
 
  .card_expirience{
-  display: flex;
-  width: 100%;
+
+  padding: 20px;
   background-color: #f8f9f8;
+  position: relative;
  }
 
  .card_list{
   display: flex;
-    flex-direction: column;
-    border: 1px solid #E4EAF2;
+    
     border-radius: 12px;
     padding: 16px;
-    gap: 12px;
+    gap: 24px;
     background-color: #212529;
-    width: 100%;
     color: #fff;
-
+    border: 1px solid #E4EAF2;
+    width: 100%;
  }
 
  .expirience_title{
+  
   color: #212529;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 36px;
+
+   padding: 12px;
+   margin-bottom: 24px;
  }
 
  .expirience_badge{
   background-color: #ff7347;
   padding: 6px 12px;
   border-radius: 12px;
+ 
+ }
 
+ .exp_badge{
+  position: absolute;
+   align-self: flex-end;
+  
  }
 
  .list_name{

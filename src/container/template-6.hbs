@@ -45,7 +45,7 @@
            {{#with updates}}
            <div class="updates">
             <h2 class="updates_title">{{title}}</h2>
-
+            
            
            
            {{#each list}}
@@ -71,17 +71,20 @@
         <div class="card_expirience">
             {{#with expirience}}
         
-            
+                   
             <h2 class="expirience_title">{{title}}</h2>
+            <div class="exp_badge">
             <span class="expirience_badge">{{badge}}</span>
-           
+           </div> 
+            <div class="card_list">
             {{#each list}}
-           <div class="card_list">
+          
             <div class="list_name">{{name}}</div>
+        
             <div class="list_details">{{details}}</div>
-            </div>
-            {{/each}}
            
+            {{/each}}
+            </div>
             {{/with}}
         </div> 
         
