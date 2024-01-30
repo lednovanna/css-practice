@@ -276,11 +276,16 @@
     
     border-radius: 12px;
     padding: 16px;
-    gap: 24px;
+    
     background-color: #212529;
     color: #fff;
     border: 1px solid #E4EAF2;
     width: 100%;
+ }
+
+ .card{
+  
+  gap: 24px;
  }
 
  .expirience_title{
@@ -297,12 +302,14 @@
   background-color: #ff7347;
   padding: 6px 12px;
   border-radius: 12px;
+  
  
  }
 
  .exp_badge{
+  display: flex;
   position: absolute;
-   align-self: flex-end;
+   flex-direction: flex-end;
   
  }
 
