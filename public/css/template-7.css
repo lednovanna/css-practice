@@ -54,8 +54,17 @@
 
   .user{
     display: flex;
+    justify-content: flex-end;
     color:#fff;
     align-items: flex-end;
+  
+  }
+
+
+  .ad_logo{
+      display: flex;
+      justify-content: flex-start;
+
   }
 
   .ad_text{
@@ -84,8 +93,8 @@
 
       .hero_content{
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        justify-content: center;
+        gap: px;
       }
 
       .hero_title{
@@ -97,25 +106,35 @@
     
       }
 
+      .hero_des{
+        display: flex;
+        justify-content: center;
+      }
+
       .hero_description{
+        text-align: center;
         color: #9ca3af;
         font-size: 16px;
         max-width: 600px;
         line-height: 150%;
-        text-align: center;
+        
         
       }
 
-      .hero_btn{
+      .hero_button{
+        margin-top: 16px;
         display: flex;
         justify-content: center;
+      }
+
+      .hero_btn{ 
+        
         padding: 12px 36px;
         font-size: 16px;
         color: #fff;
         text-decoration: none;
         background-color: #885FFB;
         border-radius: 6px;
-        
         
        
       }
@@ -166,9 +185,9 @@
       .articles_button{
         color: #fff;
         border: 1px solid #9ca3af;
-        padding: 4px 10px;
+        padding:  10px;
         border-radius: 6px;
-        
+        text-align: center;
       }
 
       .view{
@@ -193,6 +212,11 @@
         width: 300px;
         height: 200px;
         border-radius: 8px;
+        
+      }
+
+      .relative{
+        position: relative;
       }
 
       .card_title {
@@ -211,6 +235,17 @@
         height: 100px;
       } 
 
+      .badge_card{
+        background-color: orange;
+        padding: 6px;
+        color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        
+      }
+
       .card_btn{
         margin-top: 8px;
         display: block;
@@ -225,6 +260,8 @@
       }
 
       .footer{
+        display: flex;
+        justify-content: space-between;
         border-top: 1px solid #9ca3af;
         margin-top: 60px;
         margin-bottom: 20px;
@@ -238,6 +275,7 @@
       }
 
       .pages_link{
+        margin-top: 12px;
         color: #fff;
         font-size: 14px;
          text-decoration: none;

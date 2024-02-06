@@ -1,27 +1,12 @@
 <div class="page">
     <div class="page_content">
         <div class="page_block">
-<header class="header">
+
     {{#with header}}
+   <header class="header"> 
     <div class="logo">
         <span class="badge">{{brandName}}</span>
     </div> 
-     <div class="user">Users online: {{userOnline}} </div>
-
-   
-    <div class="header_ad">  
-   {{#with ad}}
-   
-   <div class="ad_logo">
-    <span class="ad_badge">Ad</span>
-    </div>
-
-    <div class="ad_text"> {{text}}: {{url}}</div>
-   
-    
-
-   {{/with}}
-   </div>
     <nav class="header_nav">
         <div class="nav_right">
             <div class="nav">
@@ -32,20 +17,43 @@
             
         </div>
     </nav>
+    </header>
+
+
+    <div class="header_ad">  
+    
+     <div class="user">Users online: {{userOnline}} </div>
+ 
+ <div class="ad_logo">
+   {{#with ad}}
+    <span class="ad_badge">Ad</span>
+    <div class="ad_text"> {{text}}: {{url}}</div>
+   {{/with}}
+   </div>
+   </div>
+
+    
   {{/with}}  
-</header>
+
 
 <div class="page_block">
     <div class="hero">
 {{#with hero}}
    <div class="hero_content">
 <h1 class="hero_title">{{title}}</h1>
+</div>
+<div class="hero_des">
 <p class="hero_description">{{description}}</p>
 </div>
+
+<div class="hero_button">
 {{#with button}}
+
 <a class="hero_btn" href="{{url}}">{{text}}</a>
 
+
 {{/with}}
+</div>
 {{/with}}
 </div>
 </div>
@@ -72,25 +80,32 @@
     <div class="card_form">
         {{#each articles}}
         <div class="card">
+            <div class="relative">
         <img class="card_image" src="{{photo}}" alt="image">
+        {{#if isNew}}
+        <span class="badge_card">New</span>
+        {{/if}}
+        </div>
                 <h2 class="card_title">{{name}}</h2>
                 <p class="card_description">{{description}}</p>
+                
                 <button class="card_btn" href="#">Raed All</button>
            </div>
         {{/each}}
     </div>
 
 <footer class="footer">
-    {{#with footer}}
-    <div class="footer_cop">
-    <div class="footer_copyright">{{copyright}}</div>
-     </div>
+ {{#with footer}}
+    
     <div class="pages_nav">
     {{#each pages}}
    
      <a href="{{path}}" class="pages_link">{{name}}</a>
     {{/each}}
     </div>
+    <div class="footer_cop">
+    <div class="footer_copyright">{{copyright}}</div>
+     </div>
 </div>
     {{/with}}
 </footer>
