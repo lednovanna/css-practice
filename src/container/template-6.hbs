@@ -49,13 +49,16 @@
            
            {{#each list}}
            <div class="lst">
-            <div class="badge_blue">
-             <span class="badge"></span>   
+            <div class="badge_blue {{#if @last}}yellow{{/if}}
+             {{#if @first}}violet{{/if}} ">
+             <span class="badge "></span>   
             </div>
+            
             <div class="inf">
            <div class="list_nickname"> {{nickname}}</div>
            <div class="list_description">{{description}}</div>
            </div>
+           
           </div>
            {{/each}}
             
@@ -71,6 +74,17 @@
             
             {{#with expirience}}
         
+
+            <div class="expirience_header">
+            <h2 class="expirience_title">{{title}}</h2>
+            
+            <span class="expirience_badge">{{badge}}</span>
+             </div>
+
+            <div class="card_list">
+            {{#each list}}
+            <div class="card">
+
                 
             <h2 class="expirience_title">{{title}}</h2>
             <div class="exp_badge">
@@ -80,12 +94,19 @@
             <div class="card_list">
             {{#each list}}
           <div class="card">  
+
             <div class="list_name">{{name}}</div>
         
             <div class="list_details">{{details}}</div>
+
+           </div>
+            {{/each}}
+            </div>
+
            </div> 
             {{/each}} 
             </div>
+
 
             {{/with}}
         </div> 

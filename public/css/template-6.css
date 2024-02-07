@@ -214,12 +214,14 @@
 
   .lst{
     display: flex;
-  flex-direction: column;
+  
   gap: 12px;
 
   position: relative;
   padding-right: 36px;
   }
+
+ 
 
   .list_nickname{
     
@@ -259,12 +261,51 @@
     background-color: blue;
   }
 
+  .violet{
+    background-color:violet ;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+
+
   
+
+.expirience_header{
+  position: relative;
+ display: flex;
+ 
+}
+
 
 
 
 
  .card_expirience{
+ 
+  background-color: #f8f9fa;
+  margin-top: 24px;
+  padding: 16px;
+  
+ }
+
+ .card{
+
+    border: 1px solid #E4EAF2;
+    border-radius: 12px;
+    padding: 22px;
+    
+    background-color: #212529;
+    
+    color: #fff;
+ }
+
+ .card_list{
+  margin-top: 12px;
+  display: flex;
+   justify-content: space-between; 
+   gap: 12px;
+
 
   padding: 20px;
   background-color: #f8f9f8;
@@ -283,6 +324,7 @@
     width: 100%;
  }
 
+
  .card{
   
   gap: 24px;
@@ -292,6 +334,9 @@
   
   color: #212529;
     font-weight: 600;
+
+    font-size: 28px;
+
     font-size: 36px;
 
    padding: 12px;
@@ -299,9 +344,13 @@
  }
 
  .expirience_badge{
+  right: -20px;
+  top: -20px;
   background-color: #ff7347;
   padding: 6px 12px;
   border-radius: 12px;
+  position: absolute;
+  transform: rotate(30d);
   
  
  }
