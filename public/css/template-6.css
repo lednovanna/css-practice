@@ -270,11 +270,14 @@
 
 
   
+
 .expirience_header{
   position: relative;
  display: flex;
  
 }
+
+
 
 
 
@@ -303,12 +306,41 @@
    justify-content: space-between; 
    gap: 12px;
 
+
+  padding: 20px;
+  background-color: #f8f9f8;
+  position: relative;
+ }
+
+ .card_list{
+  display: flex;
+    
+    border-radius: 12px;
+    padding: 16px;
+    
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid #E4EAF2;
+    width: 100%;
+ }
+
+
+ .card{
+  
+  gap: 24px;
  }
 
  .expirience_title{
+  
   color: #212529;
     font-weight: 600;
+
     font-size: 28px;
+
+    font-size: 36px;
+
+   padding: 12px;
+   margin-bottom: 24px;
  }
 
  .expirience_badge{
@@ -318,8 +350,16 @@
   padding: 6px 12px;
   border-radius: 12px;
   position: absolute;
-  transform: rotate(30deg);
+  transform: rotate(30d);
+  
+ 
+ }
 
+ .exp_badge{
+  display: flex;
+  position: absolute;
+   flex-direction: flex-end;
+  
  }
 
  .list_name{

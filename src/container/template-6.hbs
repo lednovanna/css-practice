@@ -1,6 +1,5 @@
 
-    
-        
+   
         <header class="header row g-0">
             <div class="col-3">
             {{> logo}}
@@ -45,7 +44,7 @@
            {{#with updates}}
            <div class="updates">
             <h2 class="updates_title">{{title}}</h2>
-
+            
            
            
            {{#each list}}
@@ -72,8 +71,10 @@
         </div>
 
         <div class="card_expirience">
+            
             {{#with expirience}}
         
+
             <div class="expirience_header">
             <h2 class="expirience_title">{{title}}</h2>
             
@@ -83,11 +84,30 @@
             <div class="card_list">
             {{#each list}}
             <div class="card">
+
+                
+            <h2 class="expirience_title">{{title}}</h2>
+            <div class="exp_badge">
+            <span class="expirience_badge">{{badge}}</span>
+           </div> 
+
+            <div class="card_list">
+            {{#each list}}
+          <div class="card">  
+
             <div class="list_name">{{name}}</div>
+        
             <div class="list_details">{{details}}</div>
+
            </div>
             {{/each}}
             </div>
+
+           </div> 
+            {{/each}} 
+            </div>
+
+
             {{/with}}
         </div> 
         
