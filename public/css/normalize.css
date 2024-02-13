@@ -1,5 +1,5 @@
 
-
+@layer {
 /* Document
    ========================================================================== */
 
@@ -412,6 +412,7 @@ input:focus
 
 /* Text Inputs
 -----------------------------------------------*/
+
 
 input[type=date],
 input[type=datetime],
@@ -941,4 +942,5 @@ input:-webkit-autofill {
 
 h1, p {
   margin: 0;
-}
+} 
+ }
