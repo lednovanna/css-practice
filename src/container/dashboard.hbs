@@ -17,12 +17,37 @@
 
     <body>
      <div class="page page--dashboard"> 
-        <aside class="page__aside aside">git pull
+        <aside class="page__aside aside vertical">
          <div class="aside__logo">
           Sidebar
          </div>
+
+        <nav class="vertical vertical--small">
+            <a href="#" class="nav-button nav-button--active click">
+                <span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
+                <span class="text text--light">Home</span>
+            </a>
+
+            <a href="#" class="nav-button click">
+                <span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg')"></span>
+                <span class="text text--light">Orders</span>
+            </a>
+
+            <a href="#" class="nav-button click">
+                <span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
+                <span class="text text--light">Products</span>
+            </a>
+
+        </nav>
         </aside>
-        <header class="header">test</header>   
+
+        <header class="header">
+           <div class="layout header__content text--small">
+            <input type="text" class="field">
+           </div>
+        </header>  
+
+
         <main class="main">test</main>    
      </div>
     </body>
